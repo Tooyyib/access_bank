@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom/client'
+import './dredlock.css'
 import './index.css'
 import PageNotFound from './pages/pageNotfound/PageNotFound.jsx';
 import Dashboard from './pages/dashboard/Dashboard.jsx';

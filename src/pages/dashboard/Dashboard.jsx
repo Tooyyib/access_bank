@@ -1,26 +1,106 @@
-import Container from "../../component/shared/container/Container"
-import Sidebar from "../../component/shared/sideBar/Sidebar"
+import Sidebar from "../../component/shared/leftSideBar/LeftSidebar"
+import Right from "../../component/shared/right/Right"
+import logo from "../../assets/images/logo.jpeg"
+import bell from "../../assets/images/bell.png"
+import customer from "../../assets/images/customer.png"
+import indicator from "../../assets/images/indicator.png"
+import portfolio from "../../assets/images/portfolio.png"
+
 
 
 const Dashboard = () => {
+  const today = new  Date()
+  const  year = today.getFullYear()
+  const  month = today.getMonth ()
+  const  day = today.getDate()
   return (
-    <Container>
-      <div className="flex h-screen items-center">
-        <Sidebar />
-        <div className="h-[80vh]">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, consequuntur enim rem blanditiis dolorum ullam dolore animi? Itaque ad maxime, numquam odit incidunt labore aperiam et aliquam fuga nesciunt alias.
-          Minus eveniet commodi ipsam quibusdam. Eius, veniam in ut magnam porro dicta cum id labore debitis culpa molestias, at et doloribus cumque praesentium totam? Dignissimos, ex odio? Eveniet, distinctio labore!
-          Iste praesentium rerum sequi laboriosam tempora ipsum magni, voluptatibus maiores sunt asperiores accusamus id ratione optio? Fugiat, eveniet! Velit blanditiis voluptatum sit. Odio consectetur nesciunt consequuntur inventore perspiciatis ipsum aliquam!
-          Corrupti alias, id, saepe accusamus repellendus veniam quo voluptate consequuntur, quidem quam quod? Ut eaque voluptate rerum eum distinctio assumenda. Qui natus sunt ipsa quaerat magni ut perspiciatis animi vel?
-          Autem eum maiores labore aliquid voluptas blanditiis earum reiciendis! Dolore explicabo, quo dicta, atque laudantium est dolores iure, nihil maxime at accusamus. Delectus enim amet exercitationem consequuntur obcaecati quod repudiandae!
-          Tempore et optio recusandae quaerat, ratione magnam dolor debitis quo amet! Doloribus veniam dolore, deleniti laboriosam hic quaerat beatae ipsa architecto corporis, minima quasi. Quas quos repellat voluptatibus vero perferendis.
-          A culpa veritatis excepturi sequi asperiores, molestiae officia dignissimos quibusdam distinctio et facere, ex qui architecto necessitatibus? Aliquid necessitatibus tenetur, illo ullam magnam tempore porro distinctio ea. Aperiam, sequi corrupti.
-          Fugiat consequuntur iure nostrum mollitia quisquam cum! Maxime sint voluptates modi, soluta inventore ratione? Omnis, nesciunt voluptas inventore amet eos quisquam consectetur quasi nobis fuga culpa, voluptatem exercitationem beatae quidem.
-          Tempora, expedita minus voluptates voluptate commodi aliquid dolorem cum dolorum fuga! Ea facilis corporis molestias, minima voluptatibus laboriosam atque aperiam hic, dolores omnis aspernatur veniam illo nemo nostrum iusto aliquid.
-          Quibusdam optio praesentium consectetur sapiente quia, ut qui ipsa ab nemo sint non id doloribus. A suscipit cumque ullam natus quas eius voluptatum error quaerat voluptatem! Ducimus consectetur non id?
-        </div>
+    <>
+    <div className="flex justify-between px-[2rem] items-center py-[1rem] bg-[#ffffff] border">
+      <div><img src={logo} className="w-[7rem]" alt="logo" /></div>
+      <div className="flex gap-2 items-center">
+        <div><img src={bell} className="w-[1.3rem]" alt="bell" /></div>
+        <div><img src={customer} className="w-[3rem]" alt="customer" /></div>
       </div>
-    </Container>
+    </div>
+      <div className="flex justify-between h-screen items-center">
+        <Sidebar />
+        <div className="h-screen w-[69%] bg-[#f3f1ed] rounded-tl-lg pt-[1.5rem] pl-[1.5rem]">
+         <div>
+          <div className="text-[1.5rem] font-bold">Welcome, Coker Adewale</div>
+          <div className="text-[0.7rem] mt-[-0.2rem] opacity-60 font-semibold">{`${day} - ${month +1} - ${year} `} </div>
+         </div>
+
+         <div className="flex gap-10 items-center mt-[0.8rem]">
+         <div className="flex flex-col justify-around boder p-2 w-[8rem] h-[6rem] rounded-lg bg-[#cbd6df]">
+                <div className="text-[1rem] text-[#eb7824] font-bold">Buy</div>
+                <div className="font-bold">Insurance</div>
+                <div className="flex justify-between items-center">
+                    <div>
+                        
+                    </div> 
+                    <div><img className="w-[1.5rem]" src={indicator} alt="indicator" /></div>
+                </div>
+            </div>
+            <div className="flex flex-col justify-around boder p-2 w-[8rem] h-[6rem] rounded-lg bg-[#f1d9c5]">
+                <div className="text-[1rem] text-[#eb7824] font-bold">Get</div>
+                <div className="font-bold">Quote</div>
+                <div className="flex justify-between items-center">
+                    <div>
+                        
+                    </div> 
+                    <div><img className="w-[1.5rem]" src={indicator} alt="indicator" /></div>
+                </div>
+            </div>
+          <div className="w-[40rem] h-[6rem] rounded-lg text-[0.7rem] flex flex-col gap-3 p-3 font-bold bg-[#ffffff] drop-shadow-sm">
+            <div>Want to insure your family through termplan?</div>
+            <div>Support your families <br /> financials in your absence</div>
+          </div>
+         </div>
+
+         <div className="rounded-lg mt-[1rem]">
+          <img src={portfolio} className="w-[96%] h-[16rem]" alt="portfolio" />
+         </div>
+
+
+         <div className="flex flex-col gap-2 my-[2rem] w-[96%] border">
+          <div className="flex justify-between bg-[#057a82] text-sm p-2 font-semibold text-white rounded items-center"> 
+            <div>Underwriter</div>
+            <div>policy </div>
+            <div>policy-No</div>
+            <div>Expiration </div>
+            <div>Status</div>
+            <div>Action</div>
+          </div>
+          <div className="flex justify-between bg-[#f8f7f5] text-sm p-2 font-semibold items-center"> 
+            <div>Leadway insurance </div>
+            <div>Motor  insurance </div>
+            <div>P-292820</div>
+            <div>2023-02-31</div>
+            <div>Active</div>
+            <div>View</div>
+          </div>
+          <div className="flex justify-between bg-[#ffffff] text-sm p-2 font-semibold items-center"> 
+            <div>Leadway insurance</div>
+            <div>Life insurance </div>
+            <div>P-098766</div>
+            <div>2023-02-31</div>
+            <div>Active</div>
+            <div>View</div>
+          </div>
+          <div className="flex justify-between bg-[#ffffff] text-sm p-2 font-semibold items-center"> 
+            <div>Leadway insurance </div>
+            <div>Life insurance</div>
+            <div>P-876576</div>
+            <div>2023-02-31</div>
+            <div>Active</div>
+            <div>View</div>
+          </div>
+         </div>
+        </div>
+       <Right />
+       
+      </div>
+    </>
   )
 }
 
