@@ -32,9 +32,9 @@ const Footer = () => {
     <div><button className="bg-[#ffffff] w-[9rem] border p-2 rounded">sign in</button></div>
   </div>
 </div>
-<div className="flex justify-center">
-    <div className="flex flex-col gap-3 w-[80%]">
-      <div><hr  className="text-[#A5C61F]"/></div>
+<div className="flex justify-center py-[3rem]">
+    <div className="flex flex-col gap-3 w-[90%]">
+      <div><hr  className=" border-b border-[#f0b6a4]" /></div>
       <div>© Access insurance brokers 2023. We love our users!</div>
     </div>
 </div>

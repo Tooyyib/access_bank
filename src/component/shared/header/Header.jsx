@@ -19,12 +19,12 @@ const Header = () => {
           <img className="w-[12rem]" src={logo} alt="logo" />
         </div>
         <div className="flex gap-10 items-center">
-          <div>Home</div>
+          <div><a href="/Home">Home</a></div>
           <div className="flex items-center gap-2"><div>product</div><div><MdKeyboardArrowUp /></div></div>
           <div>About</div>
           <div>Contact us</div>
           <div><button className="border border-2 border-[#36689f]  bg-[#ffffff] text-[#36689f] hover:text-[#ffffff] rounded-[0.4rem] w-[11rem] py-2 hover:bg-[#36689f]">Get quote</button></div>
-          <div><button className="bg-[#eb7824] hover:bg-orange-300 hover:bg-opacity-14 text-[#ffffff] rounded-[0.4rem] w-[11rem] py-2">Sign in</button></div>
+          <div><button className="bg-[#eb7824] hover:bg-orange-300 hover:bg-opacity-14 text-[#ffffff] rounded-[0.4rem] w-[11rem] py-2"><a href="/Signup">Sign in</a></button></div>
         </div>
       </div>  
       {/* <div onClick={showMenu} className="flex justify-evenly mt-[-3.5rem] mr-[10rem]">

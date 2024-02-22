@@ -13,13 +13,13 @@ const Signup = () => {
   const[password, setPassword]=useState("")
     const[visible, setVisible]=useState(false)
   return (
-    <>
-      <div className="bg-[#e8e6e2] flex flex-col items-center  h-screen pt-3">
+    <div className="bg-[#e8e6e2] h-screen">
+      <div className=" flex flex-col items-center py-[2rem]">
         <div className="flex flex-col items-start gap-3 w-[70%]">
           <div><img className="w-[9rem]" src={logo2} alt="logo" /></div>
         </div>
-        <div className="flex flex-col gap-2 items-center mt-[3rem]">
-          <div className="grid grid-cols-2 gap-5 font-semibold">
+        <div className="flex flex-col gap-2 items-center mt-[3rem] mt-[6rem]">
+          <div className="grid grid-cols-2 gap-5 ">
           <div className="flex flex-col">
          <p className="text-[0.9rem]">Surname</p>
           <div><input placeholder="Daniel regar" className="w-[18rem] text-sm bg-transparent border-b border-black outline-none" type="text" /></div>
@@ -64,7 +64,7 @@ const Signup = () => {
          </div>
           
 
-         <div className="grid grid-cols-2 items-center text-[0.6rem] mt-[-2rem] font-bold opacity-70">
+         <div className="grid grid-cols-2 items-center text-[0.6rem] mt-[-1rem] font-bold opacity-70">
           <div className="flex gap-1 items-center ">
             <div><img className="w-[0.5rem] rounded-[50%]" src={cancel} alt="cancel" /></div>
             <div>8 characters minimum</div>
@@ -87,12 +87,12 @@ const Signup = () => {
             <div><input className="w-[0.6rem]" type="checkbox" /></div>
             <div>By selecting create account, i agree to terms of services and privacy policy</div>
           </div>
-          <div className=""><button className="w-[39rem] font-bold rounded-3 p-2 bg-[#EB7824] text-white">create account</button></div>
+          <div className=""><button className="w-[39rem] font-bold rounded-lg p-2 bg-[#EB7824] text-white">create account</button></div>
           <div className="flex gap-2 items-center"><div>__________</div> <div>OR</div> <div>__________</div></div>
           <div>continue with</div>
           <div className="flex justify-center gap-3">
-            <div><button className="w-[9rem] font-bold rounded-3 p-2 bg-[#114c8d] text-white">Acess bank</button></div>
-            <div><button className="w-[9rem] font-bold rounded-3 p-2 bg-[#14828a] text-white">Lend co</button></div>
+            <div><button className="w-[9rem] font-bold rounded-lg p-2 bg-[#114c8d] text-white">Acess bank</button></div>
+            <div><button className="w-[9rem] font-bold rounded-lg p-2 bg-[#14828a] text-white">Lend co</button></div>
           </div>
           <div className="flex justify-between w-[10rem]">
             <div><img className="w-[0.8rem]" src={facebook} alt="facebook" /></div>
@@ -101,7 +101,7 @@ const Signup = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

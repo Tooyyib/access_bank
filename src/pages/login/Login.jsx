@@ -15,7 +15,7 @@ const Login = () => {
       <div className="bg-[#e8e6e2] w-[50%] flex flex-col items-center  h-screen pt-3">
         <div className="flex flex-col items-start gap-3 w-[70%]">
           <div><img className="w-[9rem]" src={logo2} alt="logo" /></div>
-          <div className="flex gap-2 items-center"><div><GoArrowLeft className="text-black opacity-60 font-bold" /></div><div className="text-black opacity-20">back</div></div>
+          <div className="flex gap-2 items-center"><div><a href="/Home"><GoArrowLeft className="text-black opacity-60 font-bold" /></a></div><div className="text-black opacity-20"><a href="/Home">back</a></div></div>
         </div>
         <div className="flex flex-col gap-4 items-center mt-[3rem]">
          <div className="flex flex-col">

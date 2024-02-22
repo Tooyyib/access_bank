@@ -95,6 +95,14 @@ const Dashboard = () => {
             <div>Active</div>
             <div>View</div>
           </div>
+          <div className="flex justify-between bg-[#ffffff] text-sm p-2 font-semibold items-center"> 
+            <div>Leadway insurance </div>
+            <div>Life insurance</div>
+            <div>P-876576</div>
+            <div>2023-02-31</div>
+            <div>Active</div>
+            <div>View</div>
+          </div>
          </div>
         </div>
        <Right />
