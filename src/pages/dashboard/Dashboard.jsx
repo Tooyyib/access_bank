@@ -4,11 +4,83 @@ import logo from "../../assets/images/logo.jpeg"
 import bell from "../../assets/images/bell.png"
 import customer from "../../assets/images/customer.png"
 import indicator from "../../assets/images/indicator.png"
-import portfolio from "../../assets/images/portfolio.png"
+// import portfolio from "../../assets/images/portfolio.png"
 
-
+import { useState } from "react"
+import ReactApexChart from 'react-apexcharts'
 
 const Dashboard = () => {
+const[state, setState]=useState({
+  series: [{
+    name: 'Motor insurance ',
+    data: [58,0]
+  }, {
+    name: 'Travel Insurance,',
+    data: [44,]
+  },
+  {
+    name: 'GIT Insurance',
+    data: [15,]
+  },
+  {
+    name: 'Safety Plus',
+    data: [50,]
+  },
+  {
+    name: '.',
+    data: [5,]
+  },
+  {
+    name: '.',
+    data: [10,]
+  },
+  {
+    name: '.',
+    data: [13,]
+  },
+ ],
+  options: {
+    chart: {
+      type: 'bar',
+      height: 350
+    },
+    plotOptions: {
+      bar: {
+        horizontal: false,
+        columnWidth: '10%',
+        endingShape: 'rounded'
+      },
+    },
+    dataLabels: {
+      enabled: false
+    },
+    stroke: {
+      show: true,
+      width: 9,
+      colors: ['transparent']
+    },
+    
+    yaxis: {
+      title: {
+        text: ''
+      }
+    },
+    fill: {
+      opacity: 1
+    },
+    tooltip: {
+      y: {
+        formatter: function (val) {
+          return "$ " + val + " thousands"
+        }
+      }
+    }
+  },
+
+
+})
+
+
   const today = new  Date()
   const  year = today.getFullYear()
   const  month = today.getMonth ()
@@ -58,7 +130,9 @@ const Dashboard = () => {
          </div>
 
          <div className="rounded-lg mt-[1rem]">
-          <img src={portfolio} className="w-[96%] h-[16rem]" alt="portfolio" />
+         <ReactApexChart options={state.options} series={state.series} type="bar" height={300}  width={1000}/>
+
+          {/* <img src={portfolio} className="w-[96%] h-[16rem]" alt="portfolio" /> */}
          </div>
 
 
