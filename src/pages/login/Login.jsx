@@ -26,7 +26,7 @@ const Login = () => {
          <p className="text-[0.9rem]">Password</p>
           <div><input placeholder="Enter your password" className="w-[18rem] text-sm bg-transparent  border-b border-black  outline-none" type="text" /></div>
          </div>
-          <div className=""><button className="w-[18rem] font-bold rounded-3 p-2 bg-[#EB7824] text-white">Log in</button></div>
+          <div className=""><button className="w-[18rem] font-bold rounded-3 p-2 bg-[#EB7824] text-white"><a href="/Dashboard">Log in</a></button></div>
           <div className="text-sm font-semibold">Forgot your password?</div>
           <div className="flex gap-2 items-center"><div>__________</div> <div>OR</div> <div>__________</div></div>
           <div>continue with</div>

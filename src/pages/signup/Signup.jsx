@@ -87,7 +87,7 @@ const Signup = () => {
             <div><input className="w-[0.6rem]" type="checkbox" /></div>
             <div>By selecting create account, i agree to terms of services and privacy policy</div>
           </div>
-          <div className=""><button className="w-[39rem] font-bold rounded-lg p-2 bg-[#EB7824] text-white">create account</button></div>
+          <div className=""><button className="w-[39rem] font-bold rounded-lg p-2 bg-[#EB7824] text-white"><a href="/Login">create account</a></button></div>
           <div className="flex gap-2 items-center"><div>__________</div> <div>OR</div> <div>__________</div></div>
           <div>continue with</div>
           <div className="flex justify-center gap-3">
